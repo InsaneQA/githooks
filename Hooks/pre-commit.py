@@ -52,5 +52,5 @@ def main() -> int:
 
 
 if __name__ == '__main__':
-    print(get_list_of_files_in_directory_and_children())
+    # print(get_list_of_files_in_directory_and_children())
     exit(main())

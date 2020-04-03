@@ -6,12 +6,11 @@ import os
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
 
-os.system('/Hooks/pre-commit/py')
-
 print(os.getcwd())
 success = True
 os.listdir()
 print(os.listdir())
+project_folder = os.getcwd()
 
 
 def get_list_of_files_in_directory_and_children():

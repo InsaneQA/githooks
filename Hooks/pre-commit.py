@@ -6,6 +6,7 @@ import os
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
 
+print(__name__)
 print(os.getcwd())
 success = True
 os.listdir()
@@ -53,4 +54,4 @@ def main() -> int:
 
 if __name__ == '__main__':
     # print(get_list_of_files_in_directory_and_children())
-    exit(main())
+    exit(0)
